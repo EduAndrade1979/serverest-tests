@@ -1,0 +1,93 @@
+{
+	"id": "1ff2ea7a-82b8-4a46-8f28-0b276745eec6",
+	"values": [
+		{
+			"key": "accessToken",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFuZHJhZGVAcWEuY29tLmJyIiwicGFzc3dvcmQiOiJ0ZXN0ZSIsImlhdCI6MTc0MjIyMTkxNiwiZXhwIjoxNzQyMjIyNTE2fQ.5IYudHrXt-Lts0yj2ARDFadO5YYZio756cKVl2iVqtI",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "userEmail",
+			"value": "andrade@qa.com.br",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "userPassword",
+			"value": "teste",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "userId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "userName",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "productName",
+			"value": "Mouse sem fio Multilaser",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "productDescription",
+			"value": "Mouse branco",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "productQuant",
+			"value": "120",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "productPrice",
+			"value": "45",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "newProductId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "newUserId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "loggedInEmail",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "loggedInPassword",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "newCartId",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"name": "Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2025-03-20T17:10:46.465Z",
+	"_postman_exported_using": "Postman/11.37.4"
+}
