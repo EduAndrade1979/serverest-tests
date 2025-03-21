@@ -7,28 +7,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Passo 1: Pega o código do repositório
+      # Passo 1: Checkout do código
       - name: Checkout do código
         uses: actions/checkout@v3
 
-      # Passo 2: Instala o Node.js
+      # Passo 2: Instalar o Node.js
       - name: Instalar o Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '16'
 
-      # Passo 3: Instala o Newman
+      # Passo 3: Instalar o Newman
       - name: Instalar o Newman
         run: npm install -g newman
 
-      # Passo 4: Verificar arquivos na raiz do repositório
+      # Passo 4: Verificar arquivos na raiz
       - name: Verificar arquivos na raiz
         run: ls -alh
 
-      # Passo 5: Executa os testes da Collection do Postman
+      # Passo 5: Executar os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
-          newman run "collection.json" \
-            -e "environment.json" \
+          newman run "Serverest Dev.postman_collection.json" \
+            -e "Serverest Dev.postman_environment.json" \
             -g "globals.json" \
             --reporters cli
