@@ -32,3 +32,4 @@ jobs:
             -e "Serverest Dev.postman_environment.json" \
             -g "workspace.postman_globals.json" \
             --reporters cli
+            --folder "Fluxo completo"
