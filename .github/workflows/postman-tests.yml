@@ -28,7 +28,7 @@ jobs:
       # Passo 5: Executar os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
-          newman run "Serverest Dev.postman_collection.json" \
+          newman run "Serverest.postman_collection.json" \
             -e "Serverest Dev.postman_environment.json" \
             -g "workspace.postman_globals.json" \
             --reporters cli
