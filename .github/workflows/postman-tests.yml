@@ -1,0 +1,24 @@
+name: API Tests with Postman
+
+on: [push]
+
+jobs:
+  test-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Passo 1: Pega o código do repositório
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      # Passo 2: Instala o Node.js
+      - name: Instalar o Node.js
+        uses: actions/setup-node@v18
+
+      # Passo 3: Instala o Newman
+      - name: Instalar o Newman
+        run: npm install -g newman
+
+      # Passo 4: Executa a Collection do Postman
+      - name: Executar os testes da Collection do Postman
+        run: newman run postman/collection.json -e postman/environment.json -g postman/globals.json --reporters cli
