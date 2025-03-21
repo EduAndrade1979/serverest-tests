@@ -21,7 +21,10 @@ jobs:
       - name: Instalar o Newman
         run: npm install -g newman
 
-      # Passo 4: Executa os testes da Collection do Postman na pasta "Fluxo completo"
+      # Passo 4: Executa os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
-          newman run "Fluxo completo/Serverest.postman_collection.json" -e "Fluxo completo/Serverest.postman_environment.json" -g "Fluxo completo/Serverest.postman_globals.json" --reporters cli
+          newman run collection.json \
+            -e environment.json \
+            -g globals.json \
+            --reporters cli
