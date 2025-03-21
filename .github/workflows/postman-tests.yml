@@ -21,7 +21,11 @@ jobs:
       - name: Instalar o Newman
         run: npm install -g newman
 
-      # Passo 4: Executa os testes da Collection do Postman
+      # Passo 4: Verificar arquivos na raiz do repositório
+      - name: Verificar arquivos na raiz
+        run: ls -alh
+
+      # Passo 5: Executa os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
           newman run "collection.json" \
