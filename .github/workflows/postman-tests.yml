@@ -24,7 +24,7 @@ jobs:
       # Passo 4: Executa os testes da Collection do Postman
       - name: Executar os testes da Collection do Postman
         run: |
-          newman run collection.json \
-            -e environment.json \
-            -g globals.json \
+          newman run "collection.json" \
+            -e "environment.json" \
+            -g "globals.json" \
             --reporters cli
