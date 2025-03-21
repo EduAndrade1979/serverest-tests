@@ -13,7 +13,9 @@ jobs:
 
       # Passo 2: Instala o Node.js
       - name: Instalar o Node.js
-        uses: actions/setup-node@v18
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
 
       # Passo 3: Instala o Newman
       - name: Instalar o Newman
@@ -21,4 +23,4 @@ jobs:
 
       # Passo 4: Executa a Collection do Postman
       - name: Executar os testes da Collection do Postman
-        run: newman run postman/collection.json -e postman/environment.json -g postman/globals.json --reporters cli
+        run: newman run "Fluxo completo/postman/collection.json" -e "Fluxo completo/postman/environment.json" -g "Fluxo completo/postman/globals.json" --reporters cli
